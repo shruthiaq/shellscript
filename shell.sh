@@ -36,7 +36,7 @@ fi
 
 # Assign the arguments to variables and convert the service to lowercase
 aws_region=$1
-aws_service=$2
+
 aws_service=$(echo "$2" | tr '[:upper:]' '[:lower:]')
 
 # Check if the AWS CLI is installed
